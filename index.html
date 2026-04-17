@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>goit-markup-hw-02</title>
 
     <link
@@ -26,6 +27,11 @@
         <a class="logo header-logo" href="./index.html">
           Web<span class="logo-part">Studio</span>
         </a>
+        <button type="button" class="menu-btn">
+          <svg class="header-btn" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
 
         <nav class="header-nav">
           <ul class="header-list">
@@ -127,7 +133,11 @@
 
           <ul class="team-list">
             <li class="team-item">
-              <img src="./images/img-3.jpg" alt="Mark Guerrero" />
+              <img
+                src="./images/img-3.jpg"
+                srcset="./images/img-3.jpg 1x, ./images/img-3@2x.jpg 2x"
+                alt="Mark Guerrero"
+              />
               <div class="team-content">
                 <h3 class="team-subtitle">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
@@ -165,7 +175,11 @@
             </li>
 
             <li class="team-item">
-              <img src="./images/img-2.jpg" alt="Tom Ford" />
+              <img
+                src="./images/img-2.jpg"
+                srcset="./images/img-2-1x.jpg 1x, ./images/img-2@2x.jpg 2x"
+                alt="Tom Ford"
+              />
               <div class="team-content">
                 <h3 class="team-subtitle">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -203,7 +217,11 @@
             </li>
 
             <li class="team-item">
-              <img src="./images/img-1.jpg" alt="Camila Garcia" />
+              <img
+                src="./images/img-1.jpg"
+                srcset="./images/img-1.jpg 1x, ./images/img-1@2x.jpg 2x"
+                alt="Camila Garcia"
+              />
               <div class="team-content">
                 <h3 class="team-subtitle">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
@@ -241,7 +259,11 @@
             </li>
 
             <li class="team-item">
-              <img src="./images/img.jpg" alt="Daniel Wilson" />
+              <img
+                src="./images/img.jpg"
+                srcset="./images/img-1x.jpg 1x, ./images/img-@2x.jpg 2x"
+                alt="Daniel Wilson"
+              />
               <div class="team-content">
                 <h3 class="team-subtitle">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
@@ -288,7 +310,11 @@
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
-                <img src="./images/img-4.jpg" alt="Banking App" />
+                <img
+                  src="./images/img-4.jpg"
+                  srcset="./images/img-4.jpg 1x /images/img-4.2xjpg 2x"
+                  alt="Banking App"
+                />
                 <p class="portfolio-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -305,7 +331,11 @@
 
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
-                <img src="./images/img-5.jpg" alt="Cashless Payment" />
+                <img
+                  src="./images/img-5.jpg"
+                  srcset="./images/img-5.jpg 1x /images/img-5.2xjpg 2x"
+                  alt="Cashless Payment"
+                />
                 <p class="portfolio-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -322,7 +352,11 @@
 
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
-                <img src="./images/img-6.jpg" alt="Meditation App" />
+                <img
+                  src="./images/img-6.jpg"
+                  srcset="./images/img-6.jpg 1x /images/img-6.2xjpg 2x"
+                  alt="Meditation App"
+                />
                 <p class="portfolio-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -339,7 +373,11 @@
 
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
-                <img src="./images/img-7.jpg" alt="Taxi Service" />
+                <img
+                  src="./images/img-7.jpg"
+                  srcset="./images/img-7.jpg 1x /images/img-7.2xjpg 2x"
+                  alt="Taxi Service"
+                />
                 <p class="portfolio-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -356,7 +394,11 @@
 
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
-                <img src="./images/img-8.jpg" alt="Screen Illustrations" />
+                <img
+                  src="./images/img-8.jpg"
+                  srcset="./images/img-8.jpg 1x /images/img-8.2xjpg 2x"
+                  alt="Screen Illustrations"
+                />
                 <p class="portfolio-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -373,7 +415,11 @@
 
             <li class="portfolio-item">
               <div class="portfolio-image-wrapper">
-                <img src="./images/img-9.jpg" alt="Online Courses" />
+                <img
+                  src="./images/img-9.jpg"
+                  srcset="./images/img-9.jpg 1x /images/img-9.2xjpg 2x"
+                  alt="Online Courses"
+                />
                 <p class="portfolio-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -542,6 +588,60 @@
           </div>
           <button type="submit" class="modal-button">Send</button>
         </form>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <div class="mobile-menu-container">
+        <button type="button" class="modal-close-button">X</button>
+        <nav class="mobile-menu-nav">
+          <ul class="mobile-menu-list">
+            <li><a href="" class="mobile-menu-link current">Studio</a></li>
+            <li><a href="" class="mobile-menu-link">Portfolio</a></li>
+            <li><a href="" class="mobile-menu-link">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-bottom">
+          <address class="mobile-menu-address">
+            <ul>
+              <li>
+                <a href="" class="mobile-contact current"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li><a href="" class="mobile-contact">info@devstudio.com</a></li>
+            </ul>
+          </address>
+          <ul class="mobile-social-list">
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="#">
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="#">
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="#">
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="#">
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
