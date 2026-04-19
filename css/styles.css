@@ -171,13 +171,13 @@ body {
   max-width: 496px;
   margin-left: auto;
   margin-right: auto; */
-  margin: 0 auto 72px;
   font-size: 36px;
-  line-height: 1.1;
-  color: #fff;
-
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  margin: 0 auto 72px;
   max-width: 216px;
-  line-height: 1.07;
+  color: #fff;
 }
 
 .hero-button {
@@ -829,17 +829,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .header-logo {
-    margin-right: 120px; /* або 96px — залежно від макета */
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .header-logo {
-    margin-right: 76px;
-  }
-}
-@media screen and (min-width: 768px) {
   .menu-btn {
     display: none;
   }
@@ -873,8 +862,10 @@ body {
 
   .hero-title {
     font-size: 56px;
-    max-width: 496px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
     margin-bottom: 36px;
+    max-width: 496px;
   }
 }
 
@@ -944,6 +935,14 @@ body {
 
   .features-icon {
     display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 112px;
+    background-color: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+
     margin-bottom: 8px;
   }
 }
@@ -975,6 +974,9 @@ body {
 
   .team-item {
     width: calc((100% - 72px) / 4);
+  }
+  .team.section {
+    padding: 120px 0;
   }
 }
 
