@@ -77,11 +77,16 @@ body {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .contacts {
   margin-left: auto;
+  font-style: normal;
 }
 
 .contacts-link:focus,
@@ -101,7 +106,6 @@ body {
 }
 
 .contacts-list {
-  display: flex;
   flex-direction: column;
   gap: 12px;
 }
@@ -177,7 +181,6 @@ body {
   color: #fff;
 
   max-width: 216px;
-  margin: 0 auto 36px;
   line-height: 1.07;
 }
 
@@ -409,7 +412,7 @@ body {
 .footer-social,
 .footer-subscribe {
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .footer-form {
@@ -813,6 +816,9 @@ body {
   color: #434455;
 }
 
+.mobile-menu-address {
+  font-style: normal;
+}
 .mobile-contact.current {
   color: #4d5ae5;
 }
@@ -1083,6 +1089,10 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+  }
+  .contacts-list {
+    flex-direction: row;
+    gap: 40px;
   }
 }
 
