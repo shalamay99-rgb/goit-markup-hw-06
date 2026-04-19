@@ -777,6 +777,7 @@ body {
 }
 
 .mobile-menu-container {
+  position: relative;
   height: 100%;
   padding: 72px 24px 40px;
 
@@ -832,6 +833,9 @@ body {
   .menu-btn {
     display: none;
   }
+  .header-left {
+    gap: 120px;
+  }
 
   .header-list {
     display: flex;
@@ -840,6 +844,11 @@ body {
 
   .contacts {
     display: block;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .header-left {
+    gap: 76px;
   }
 }
 
