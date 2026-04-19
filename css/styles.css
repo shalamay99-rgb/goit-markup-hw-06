@@ -685,9 +685,15 @@ body {
 }
 
 .policy-label {
-  display: flex;
+  display: block;
+  line-height: 1.4;
+}
+.policy-label .custom-checkbox {
+  display: inline-flex;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
+  margin-right: 8px;
+  vertical-align: middle;
 }
 
 .policy-label a {
